@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "cube_conquest",
+  "version": "${version}",
+  "name": "Cube Conquest",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cube_conquest/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.cubeconquest.client.CubeConquestModDataGenerator"
+    ],
+    "client": [
+      "com.cubeconquest.client.CubeConquestModClient"
+    ],
+    "main": [
+      "com.cubeconquest.CubeConquestMod"
+    ]
+  },
+  "mixins": [
+    "cube_conquest.mixins.json",
+    {
+      "config": "cube_conquest.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
