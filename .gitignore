@@ -1,24 +1,24 @@
-# Compiled class file
-*.class
+# Gradle
+.gradle/
+build/
+out/
 
-# Log file
-*.log
+# IntelliJ IDEA
+.idea/
+*.iml
 
-# BlueJ files
-*.ctxt
+# Eclipse (혹시 쓰면)
+.project
+.classpath
+.settings/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# VS Code (혹시 쓰면)
+.vscode/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# OS files
+.DS_Store
+Thumbs.db
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Logs / runtime
+logs/
+run/
